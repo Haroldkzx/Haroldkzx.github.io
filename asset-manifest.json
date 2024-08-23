@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.ff94ed56.css",
-    "main.js": "/Personal-Website/static/js/main.108ab683.js",
-    "static/media/self.png": "/Personal-Website/static/media/self.265f25f96c56204b9d55.png",
-    "static/media/python-django-udemy.jpg": "/Personal-Website/static/media/python-django-udemy.368c58a14aa3fb767167.jpg",
-    "static/media/react18-udemy.jpg": "/Personal-Website/static/media/react18-udemy.32fbc3bfbc558322f864.jpg",
-    "static/media/ncs-logo.png": "/Personal-Website/static/media/ncs-logo.429a591bf1f5bc194ff0.png",
-    "static/media/rp-logo.png": "/Personal-Website/static/media/rp-logo.a76b4d6a8e6239425057.png",
-    "static/media/saf-logo.png": "/Personal-Website/static/media/saf-logo.ed37a91422f2870e81d8.png",
-    "static/media/github.png": "/Personal-Website/static/media/github.f7043f49f94ad473eda0.png",
-    "index.html": "/Personal-Website/index.html",
-    "static/media/fastapi-1.svg": "/Personal-Website/static/media/fastapi-1.6c84dc4ea9626837be0ce2c5523b6d52.svg",
-    "main.ff94ed56.css.map": "/Personal-Website/static/css/main.ff94ed56.css.map",
-    "main.108ab683.js.map": "/Personal-Website/static/js/main.108ab683.js.map"
+    "main.css": "/static/css/main.ff94ed56.css",
+    "main.js": "/static/js/main.8dc767c9.js",
+    "static/media/self.png": "/static/media/self.265f25f96c56204b9d55.png",
+    "static/media/python-django-udemy.jpg": "/static/media/python-django-udemy.368c58a14aa3fb767167.jpg",
+    "static/media/react18-udemy.jpg": "/static/media/react18-udemy.32fbc3bfbc558322f864.jpg",
+    "static/media/ncs-logo.png": "/static/media/ncs-logo.429a591bf1f5bc194ff0.png",
+    "static/media/rp-logo.png": "/static/media/rp-logo.a76b4d6a8e6239425057.png",
+    "static/media/saf-logo.png": "/static/media/saf-logo.ed37a91422f2870e81d8.png",
+    "static/media/github.png": "/static/media/github.f7043f49f94ad473eda0.png",
+    "index.html": "/index.html",
+    "static/media/fastapi-1.svg": "/static/media/fastapi-1.6c84dc4ea9626837be0ce2c5523b6d52.svg",
+    "main.ff94ed56.css.map": "/static/css/main.ff94ed56.css.map",
+    "main.8dc767c9.js.map": "/static/js/main.8dc767c9.js.map"
   },
   "entrypoints": [
     "static/css/main.ff94ed56.css",
-    "static/js/main.108ab683.js"
+    "static/js/main.8dc767c9.js"
   ]
 }
