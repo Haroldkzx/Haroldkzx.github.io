@@ -1,0 +1,165 @@
+/* Container for skills section */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 2.5vh;
+}
+
+/* Title styling */
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 5vh;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Container for skill cards */
+.skills-box {
+  background-color: rgba(0, 52, 163, 0.2);
+  height:auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  box-sizing: border-box;
+  padding: 3vh;
+  width: 100%;
+}
+
+.framework-box {
+  background-color: rgba(0, 52, 163, 0.2);
+  height:auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3vh;
+}
+
+
+/* Center-align skill cards within each skills-box */
+.skills-box-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual skill card styling */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically within the card */
+  align-items: center;
+  width: 10vw; /* Adjust width as needed */
+  height: 15vh; /* Fixed height */
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f6f6f6; /* Card background color */
+  color: black; /* Text color */
+  text-align: center;
+  font-size: 2.5vh; /* Adjust font size */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Skill icon styling */
+.skill-icon {
+  width: 10vh; /* Adjust icon size as needed */
+  height: 10vh;
+  margin-bottom: 1vh; /* Space between the image and the text */
+}
+
+/* Hover effect for skill cards */
+.skill-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Media query for smaller screens */
+/* Media query for screens with a max width of 1024px */
+@media (max-width: 1024px) {
+  /* Container adjustments */
+  .skills-container {
+    padding: 2vh; /* Reduce padding for smaller screens */
+    width: 100%;
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  /* Title adjustments */
+  .title {
+    font-size: clamp(24px, 4vw, 36px); /* Responsive font size */
+    justify-content: center; /* Align title to the left */
+    padding-left: 10px; /* Add padding to title */
+  }
+
+  /* Skills-box adjustments */
+  .skills-box {
+    flex-direction: column; /* Stack items vertically */
+    padding: 2vh; /* Adjust padding */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Ensure alignment */
+    gap: 2vh; /* Space between skill groups */
+  }
+
+  .framework-box {
+    flex-direction: column; /* Stack items vertically */
+    padding: 2vh; /* Adjust padding */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Ensure alignment */
+    gap: 2vh; /* Space between framework groups */
+  }
+
+  /* Skills-box-wrapper adjustments */
+  .skills-box-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  /* Skill card adjustments */
+  .skill-card {
+    width: 80%; /* Full width for smaller screens */
+    height: auto; /* Allow height to adjust to content */
+    font-size: clamp(12px, 3vw, 18px); /* Responsive font size */
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin-bottom: 10px; /* Space between cards */
+  }
+
+  /* Skill icon adjustments */
+  .skill-icon {
+    width: 8vh; /* Adjust icon size for smaller screens */
+    height: 8vh;
+    margin-bottom: 1vh; /* Space between icon and text */
+  }
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+  .skills-box {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items for smaller screens */
+  }
+
+  .framework-box {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items for smaller screens */
+  }
+
+  /* Skill card adjustments */
+  .skill-card {
+    width: 90%; /* Full width for smaller screens */
+    font-size: 14px; /* Adjust font size */
+    padding: 12px; /* Adjust padding */
+  }
+
+  /* Skill icon adjustments */
+  .skill-icon {
+    width: 7vh; /* Smaller icons for smaller screens */
+    height: 7vh;
+  }
+}

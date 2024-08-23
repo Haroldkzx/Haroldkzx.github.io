@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Needed for absolute positioning of the copyright */
+  padding: 0.5vh;
+  background-color: #333;
+  color: #fff;
+  opacity: 90%;
+  height: 5vh; /* Adjust based on the desired footer height */
+}
+
+.copyright {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center the text horizontally */
+  text-align: center;
+}
+
+.icons-box {
+  display: flex;
+  gap: 5vh; /* Large gap between icons */
+  padding-right: 8vh;
+  align-items: center; /* Vertically center the icons */
+  margin-left: auto; /* Pushes icons to the right */
+}
+
+.footer img {
+  width: 2.5vh; /* Icon size */
+  height: 2.5vh;
+  vertical-align: middle;
+}
+  

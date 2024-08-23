@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.project-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts to fit items with a minimum width */
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(155, 155, 155, 0.15);
+  gap: 2vh; /* Space between grid items */
+  padding: 2.5vh;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.project-item {
+  background-color: #ffffff; /* Background color of each project box */
+  color: black; /* Text color */
+  padding: 7vh;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 90%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  max-height: 30vh;
+}
+
+.tool-icon {
+  width: 2.5vh; /* Adjust size as needed */
+  height: 2.5vh; /* Adjust size as needed */
+  margin: 0 10px; /* Space between icons */
+  vertical-align: middle; /* Align icons vertically */
+}
+
+.project-title {
+  font-size: 3vh; /* Font size for project title */
+  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 1vh;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: center;
+  gap: 1vh; /* Space between tool items */
+}
+
+.project-summary {
+  padding: 0.5vh;
+  font-size: 2vh;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.tool-name {
+  font-size: 2vh; /* Adjust font size as needed */
+  color: #000; /* Adjust text color as needed */
+}
+
+.project-link {
+  margin-top: 1vh; /* Space above the link */
+}
+
+.project-link a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  font-size: 2vh;
+}
+
+.project-link a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .project-box {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns */
+    gap: 1.5vh; /* Reduce gap between items */
+    padding: 2vh; /* Adjust padding */
+  }
+
+  .project-item {
+    padding: 4vh; /* Reduce padding for smaller screens */
+    max-height: 35vh; /* Adjust max-height if needed */
+  }
+
+  .project-title {
+    font-size: 2.5vh; /* Adjust title font size */
+  }
+
+  .project-summary {
+    font-size: 1.8vh; /* Adjust summary font size */
+  }
+
+  .tool-icon {
+    width: 2vh; /* Adjust size for smaller screens */
+    height: 2vh;
+  }
+
+  .tool-name {
+    font-size: 1.8vh; /* Adjust font size for tool names */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .project-box {
+    grid-template-columns: 1fr; /* Single column layout for mobile screens */
+    padding: 1.5vh; /* Further reduce padding */
+  }
+
+  .project-item {
+    padding: 3vh; /* Reduce padding for mobile screens */
+    max-height: none; /* Allow height to adjust based on content */
+  }
+
+  .project-title {
+    font-size: 2.5vh; /* Adjust title font size */
+  }
+
+  .project-summary {
+    font-size: 2vh; /* Adjust summary font size */
+  }
+
+  .tool-icon {
+    width: 2vh; /* Adjust size for mobile screens */
+    height: 2vh;
+  }
+
+  .tool-name {
+    font-size: 2vh; /* Adjust font size for tool names */
+  }
+}

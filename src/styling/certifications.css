@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.certifications-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts to fit items with a minimum width of 300px */
+  gap: 10vh;
+  justify-content: center;
+  padding: 2.5vh;
+  background-color: rgba(0, 52, 163, 0.2);
+  width: 100%; /* Ensure the box fills the width of the container */
+  min-width: 100%;
+  box-sizing: border-box; /* Include padding and border in the box’s width and height */
+}
+
+.certification-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 1vh;
+  box-sizing: border-box; /* Include padding and border in the card’s width and height */
+  display: flex;
+  flex-direction: column; /* Ensure that children stack vertically */
+  align-items: center; /* Center align content horizontally */
+}
+
+.certification-card img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  margin-bottom: 10px; /* Space between the image and the link */
+}
+
+.certification-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #00500d; /* Background color */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.certification-card a:hover {
+  background-color: #007514; /* Darker background on hover */
+  color: #ffffff;
+}
+
+.certification-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .certifications-box {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns */
+    gap: 5vh; /* Reduce gap between items */
+    padding: 2vh; /* Adjust padding */
+  }
+
+  .certification-card {
+    padding: 2vh; /* Adjust padding for smaller screens */
+  }
+
+  .certification-card img {
+    max-height: 50vh; /* Reduce max-height for smaller screens */
+  }
+
+  .certification-card h3 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .certification-card a {
+    padding: 8px 16px; /* Adjust padding for better fit */
+    font-size: 1.1em; /* Slightly reduce font size */
+    margin-top: 8px; /* Reduce top margin */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .certifications-box {
+    grid-template-columns: 1fr; /* Single column layout for mobile screens */
+    gap: 3vh; /* Further reduce gap between items */
+    padding: 1.5vh; /* Further reduce padding */
+  }
+
+  .certification-card {
+    padding: 1.5vh; /* Reduce padding for mobile screens */
+  }
+
+  .certification-card img {
+    max-height: 40vh; /* Further reduce max-height for mobile screens */
+  }
+
+  .certification-card h3 {
+    font-size: 1em; /* Further reduce font size for mobile screens */
+  }
+
+  .certification-card a {
+    padding: 6px 12px; /* Further adjust padding for mobile screens */
+    font-size: 1em; /* Adjust font size for mobile screens */
+    margin-top: 6px; /* Further reduce top margin */
+  }
+}

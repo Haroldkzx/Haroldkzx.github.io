@@ -1,0 +1,184 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #ffffff9f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c; /* To be changed */
+  color: #fff; /* Set text color to white for contrast */
+  font-family: 'Titillium Web', sans-serif; /* Apply the imported font */
+  overflow-x: hidden;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.ThreeScene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Send the scene behind the content */
+}
+
+/* Ensure the canvas fits the ThreeScene container */
+.ThreeScene canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.content-container {
+  display:flex;
+  position: relative;
+  z-index: 1; /* Ensure content appears above the Three.js scene */
+  color: white; /* Ensure text is visible over the background */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full viewport height for the first section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included */
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden; /* Adjust as needed */
+}
+
+#home {
+  min-height: 80vh; /* Full viewport height for the first section */
+  padding-top: 0; /* Remove extra top padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+#work-education{
+  min-height:90vh;
+  padding-top: 15vh;
+}
+
+#projects{
+  max-height:10vh;
+}
+
+#certifications {
+  min-height: 100vh; /* Adjust this value to increase the height */
+}
+
+/* Media query for screens with a max width of 1024px */
+@media (max-width: 1024px) {
+  /* General section adjustments */
+  section {
+    padding: 15px; /* Slightly reduce padding */
+    flex-direction: column; /* Ensure stacking vertically */
+    height: auto; /* Allow sections to expand with content */
+    overflow: visible; /* Ensure all content is visible */
+    margin-bottom: 30px; /* Reduce bottom margin */
+  }
+
+  /* Home section adjustments */
+  #home {
+    min-height: 50vh; /* Adjust height for smaller screens */
+    padding-top: 10vh; /* Adjust top padding */
+  }
+
+  /* Work and Education section adjustments */
+  #work-education {
+    min-height: 70vh; /* Adjust height for smaller screens */
+    padding-top: 10vh; /* Adjust top padding */
+  }
+
+  /* Projects section adjustments */
+  #projects {
+    max-height: auto; /* Allow it to expand with content */
+    padding-top: 10vh; /* Adjust top padding */
+  }
+
+  /* Certifications section adjustments */
+  #certifications {
+    min-height: 80vh; /* Adjust height for smaller screens */
+    padding-top: 10vh; /* Adjust top padding */
+  }
+
+  /* Intro text adjustments */
+  .intro {
+    font-size: clamp(12px, 4vw, 36px); /* Responsive font size */
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  /* Content container adjustments */
+  .content-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    height: auto; /* Allow it to expand with content */
+    overflow: visible; /* Ensure all content is visible */
+  }
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+  /* General section adjustments */
+  section {
+    padding: 10px; /* Further reduce padding */
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow sections to expand with content */
+    margin-bottom: 20px; /* Further reduce bottom margin */
+  }
+
+  /* Home section adjustments */
+  #home {
+    min-height: 140vh; /* Reduce height for smaller screens */
+    padding-top: 5vh; /* Adjust top padding */
+  }
+
+  /* Work and Education section adjustments */
+  #work-education {
+    min-height: 60vh; /* Adjust height for smaller screens */
+    padding-top: 5vh; /* Adjust top padding */
+  }
+
+  /* Projects section adjustments */
+  #projects {
+    max-height: auto; /* Allow it to expand with content */
+    padding-top: 5vh; /* Adjust top padding */
+  }
+
+  /* Certifications section adjustments */
+  #certifications {
+    min-height: 70vh; /* Reduce height for smaller screens */
+    padding-top: 5vh; /* Adjust top padding */
+  }
+
+  /* Intro text adjustments */
+  .intro {
+    font-size: clamp(10px, 3vw, 32px); /* Further adjust font size */
+    text-align: center; /* Center-align text */
+    padding: 5px; /* Add padding to intro text */
+  }
+
+  /* Content container adjustments */
+  .content-container {
+    padding: 5px; /* Further reduce padding */
+    height: auto; /* Allow content container to expand */
+  }
+}
