@@ -103,7 +103,7 @@
     flex-direction: column; /* Stack items vertically */
     padding: 2vh; /* Adjust padding */
     justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Ensure alignment */
+    align-items: center; /* Ensure alignment */
     gap: 2vh; /* Space between skill groups */
   }
 
@@ -111,7 +111,7 @@
     flex-direction: column; /* Stack items vertically */
     padding: 2vh; /* Adjust padding */
     justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Ensure alignment */
+    align-items: center; /* Ensure alignment */
     gap: 2vh; /* Space between framework groups */
   }
 

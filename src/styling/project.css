@@ -32,7 +32,7 @@
   justify-content: center;
   opacity: 90%;
   box-sizing: border-box; /* Ensure padding is included in width */
-  max-height: 30vh;
+  max-height: 40vh;
 }
 
 .tool-icon {
@@ -43,7 +43,7 @@
 }
 
 .project-title {
-  font-size: 3vh; /* Font size for project title */
+  font-size: 2.8vh; /* Font size for project title */
   font-weight: bold;
   font-family: 'Titillium Web', sans-serif;
   padding-top: 1vh;
@@ -134,15 +134,15 @@
   }
 
   .project-summary {
-    font-size: 2vh; /* Adjust summary font size */
+    font-size: 2.3vh; /* Adjust summary font size */
   }
 
   .tool-icon {
-    width: 2vh; /* Adjust size for mobile screens */
-    height: 2vh;
+    width: 2.2vh; /* Adjust size for mobile screens */
+    height: 2.2vh;
   }
 
   .tool-name {
-    font-size: 2vh; /* Adjust font size for tool names */
+    font-size: 2.2vh; /* Adjust font size for tool names */
   }
 }

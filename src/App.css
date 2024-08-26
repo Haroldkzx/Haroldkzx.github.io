@@ -64,13 +64,16 @@ section {
 }
 
 #home {
-  min-height: 80vh; /* Full viewport height for the first section */
+  min-height: 75vh; /* Full viewport height for the first section */
   padding-top: 0; /* Remove extra top padding */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 15vh;
+}
+#skills{
+  padding-top:20vh;
 }
 
 #work-education{

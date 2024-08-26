@@ -21,7 +21,7 @@ function Projects() {
       summary:
         "Created this website to showcase my skills, projects, and achievements in one central place. Through this website, I aim to present my work in a way that reflects who I am and what I can offer.",
       tools: [{ name: "React", icon: reactIcon }],
-      website: "https://www.google.com", // Correct property name
+      website: "https://haroldkzx.github.io", // Correct property name
     },
   ];
 

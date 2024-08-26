@@ -15,19 +15,42 @@
   left: 50%;
   transform: translateX(-50%); /* Center the text horizontally */
   text-align: center;
+  font-size: 2vh;
 }
 
 .icons-box {
   display: flex;
-  gap: 5vh; /* Large gap between icons */
+  gap: 4vh; /* Large gap between icons */
   padding-right: 8vh;
   align-items: center; /* Vertically center the icons */
   margin-left: auto; /* Pushes icons to the right */
 }
 
 .footer img {
-  width: 2.5vh; /* Icon size */
+  width: 2.5vh; /* Default icon size */
   height: 2.5vh;
   vertical-align: middle;
 }
-  
+
+/* Media Queries for Responsive Logo Size */
+
+@media (max-width: 1024px) {
+  .footer img {
+    width: 2vh;
+    height: 2vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer img {
+    width: 2vh;
+    height: 2vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer img {
+    width: 2vh;
+    height: 2vh;
+  }
+}
