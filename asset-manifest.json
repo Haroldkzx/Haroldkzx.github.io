@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd8c68de.css",
+    "main.css": "/static/css/main.8631af0d.css",
     "main.js": "/static/js/main.f3dbc2db.js",
     "static/media/self.png": "/static/media/self.265f25f96c56204b9d55.png",
     "static/media/python-django-udemy.jpg": "/static/media/python-django-udemy.368c58a14aa3fb767167.jpg",
@@ -11,11 +11,11 @@
     "static/media/github.png": "/static/media/github.f7043f49f94ad473eda0.png",
     "index.html": "/index.html",
     "static/media/fastapi-1.svg": "/static/media/fastapi-1.6c84dc4ea9626837be0ce2c5523b6d52.svg",
-    "main.dd8c68de.css.map": "/static/css/main.dd8c68de.css.map",
+    "main.8631af0d.css.map": "/static/css/main.8631af0d.css.map",
     "main.f3dbc2db.js.map": "/static/js/main.f3dbc2db.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd8c68de.css",
+    "static/css/main.8631af0d.css",
     "static/js/main.f3dbc2db.js"
   ]
 }
